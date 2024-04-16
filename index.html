@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Windows</title>
+  <link rel="icon" type="image/x-icon" href="img/Logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="home-page">
+  <div class="row" style="height: 95%;">
+    <div class="col-2">
+      <div class="row">
+        <div class="col-6">
+          <div class="side-icons mb-2">
+            <button class="btn btn-icon computer" data-toggle="modal" data-target="#ThisComputer">
+              <img class="m-auto" src="img/computer.png" alt="">
+              <span class="icon-text mt-1">This computer</span>
+            </button>
+          </div>
+          <div class="side-icons mb-2">
+            <button class="btn btn-icon">
+              <img class="m-auto" src="img/folder.png" alt="">
+              <span class="icon-text mt-1">My documents</span>
+            </button>
+          </div>
+          <div class="side-icons mb-2">
+            <button class="btn btn-icon">
+              <img class="m-auto" src="img/word.png" alt="">
+              <span class="icon-text mt-1">Word</span>
+            </button>
+          </div>
+          <div class="side-icons mb-2">
+            <button class="btn btn-icon">
+              <img class="m-auto" src="img/txt.png" alt="">
+              <span class="icon-text mt-1">CNTCTS!!</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="bin">
+        <div class="side-icons mb-2">
+          <button class="btn btn-icon">
+            <img class="m-auto" src="img/bin.png" alt="">
+            <span class="icon-text mt-1">Recycle bin</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <button class="btn panel-btn w-45">
+      <i class="fa-brands fa-windows fa-lg"></i>
+    </button>
+    <button class="btn panel-btn w-55">
+      <i class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-xl" style="color: #ffffff;"></i>
+    </button>
+    <button class="btn panel-btn w-45">
+      <div class="split-screen"></div>
+    </button>
+    <div class="center-block">
+      <div class="open-icon d-none">
+        <img src="img/open-folder.png" alt="">
+      </div>
+    </div>
+    <div class="right-block">
+      <button class="btn panel-btn">
+        <i class="fa-regular fa-message fa-flip-horizontal fa-lg" style="color: #ffffff;"></i>
+      </button>
+      <button class="btn panel-btn p-0">
+        <div class="display-date">
+          <span id="time" class="time"></span>
+          <span id="date" class="date"></span>
+        </div>
+      </button>
+      <button class="btn panel-right-btn p-0 lang">
+        eng
+      </button>
+      <button class="btn panel-right-btn p-0">
+        <i class="fa-solid fa-wifi fa-rotate-by fa-sm" style="color: #ffffff; --fa-rotate-angle: 315deg;"></i>
+      </button>
+      <button class="btn panel-right-btn p-0">
+        <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i>
+      </button>
+      <button class="btn panel-right-btn p-0">
+        <i class="fa-solid fa-chevron-up fa-sm" style="color: #ffffff;"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="ThisComputer" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">This computer</h6>
+        <div class="close">
+          <button class="btn" type="button">
+            <span class="hide-span" aria-hidden="true">_</span>
+          </button>
+          <button class="btn" type="button">
+            <span class="window-span" aria-hidden="true">
+              <i class="fa-regular fa-square-full fa-sm" style="color: #000; padding-top: 12px;"></i>
+            </span>
+          </button>
+          <button type="button" class="btn computer-close" data-dismiss="modal" aria-label="Close">
+            <span class="close-span" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-2">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+              <img src="img/not-allowed.png" alt="">
+            </div>
+          </div>
+          <div class="col-10">
+            <p>This user is not allowed. Perhaps you don't have the rights to use this resource. Please contact the administrator of this server to obtain the appropriate access rights.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger computer-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
+  <script src="js/common.js"></script>
+
+</body>
+</html>
